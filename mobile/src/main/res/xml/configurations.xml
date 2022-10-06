@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:persistent="false">
+    <PreferenceCategory android:title="Servidor OEE">
+        <SwitchPreference
+            android:key="method"
+            android:title="HTTPS"
+            android:summary="Utilizar canal de comunicação SSL" />
+        <EditTextPreference
+            android:key="ip"
+            android:title="IP"
+            android:summary="IP do servidor" />
+        <EditTextPreference
+            android:key="port"
+        android:title="Porta"
+        android:summary="Porta do servidor" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Configurações OEE">
+        <ListPreference
+            android:key="selected_cell"
+            android:title="Célula"
+            android:summary="Seleção da Célula"
+            android:entries="@array/cells"
+            android:entryValues="@array/cells"/>
+
+        <ListPreference
+            android:key="selected_machine"
+            android:title="Máquina"
+            android:summary="Seleção da Máquina"
+            android:entries="@array/machines"
+            android:entryValues="@array/machines"/>
+    </PreferenceCategory>
+</PreferenceScreen>

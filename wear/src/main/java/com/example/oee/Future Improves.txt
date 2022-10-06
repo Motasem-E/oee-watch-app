@@ -1,0 +1,1 @@
+- Don't call cells from API Always
